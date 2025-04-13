@@ -86,7 +86,7 @@ int main(){
     //Certifica que o navio 4 caiba no tabuleiro
     if(linha>1 && coluna<8){
         // Verifica se a posição está livre
-        if(tabuleiro[linha][coluna] == 0 && tabuleiro[linha+1][coluna+1] == 0 && tabuleiro[linha+2][coluna+2] == 0){
+        if(tabuleiro[linha][coluna] == 0 && tabuleiro[linha-1][coluna+1] == 0 && tabuleiro[linha-2][coluna+2] == 0){
             // Coloca o navio 4 na posição diagonal aleatória
             tabuleiro[linha][coluna] = navio[0];
             tabuleiro[linha-1][coluna+1] = navio[1];
